@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>🚨 B2S EMBEDDED 🚨</title>
+    <!-- THIS IS THE NAME OF THE TAB -->
+
+    <script type="text/javascript"
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <!-- THIS IS A LINK TO THE JAVASCRIPT REFERENCE FILE THAT IS AUTOMATICALLY INSTALLED IN ALL SERVER INSTANCES -->
+
+    <link rel="stylesheet" href="./Style.css" />
+    <!-- LINK TO STYLE FILE IN SAME FOLDER. THIS IS TO BRING IN SOME NICER FONTS -->
+  </head>
+  <!-- THIS IS THE INFORMATION ABOUT THE PAGE. IT IS NOT SEEN BY THE USER WITHIN THE WEBPAGE. -->
+
+  <body>
+    <h1>Back to school embedded dashboard</h1>
+
+    <div>
+    <button id="pdfButton">Export to PDF</button>
+    <!-- THIS ADDS A BUTTON. THE BUTTON DOES NOTHING UNLESS WE SET UP THE BUTTON ACTION IN THE APP.JS FILE-->
+
+    <button id = "imageButton">Export Image</button>
+    </div>
+
+    <hr />
+    <!-- THIS ADD A DIVIDING LINE ACROSS THE PAGE -->
+
+    <div>
+        <button id = "showButton">Show</button>
+        <button id = "hideButton">Hide</button>
+
+        <!-- WE WANT THE SHOW BUTTON TO DISPLAY WHEN THE VIZ IS HIDDEN, AND THE HIDE BUTTON WHEN THE VIZ IS SHOWN -->
+    </div>
+
+    <hr />
+    <div>
+        <h5>Filter to a specific region</h3>
+        <button class ="filter" value = "Central"> Central </button>
+        <button class ="filter" value = "North"> North </button>
+        <button class ="filter" value = "South"> South </button>
+        
+
+    </div>
+
+    <hr />
+   
+
+    <div>
+        <button id=switchViz>Switch viz</button>
+    </div>
+
+
+
+    <div id="vizContainer"></div>
+
+
+
+    <script src= "./app.js"></script>
+    <!-- THIS IS A JAVASCRIPT PAGE THAT REQUIRES THE TABLEAU SERVER JS FILE TO FUNCTION. BECAUSE WEBSITES LOAD TOP TO BOTTOM, THIS WOULDN'T WORK IF IT CAME BEFORE THE JS FILE-->
+
+    
+    
+
+    
+  </body>
+  <!-- THIS IS THE MAIN BODY OF THE WEBPAGE. ADD HEADERS AND BODY OF TEXT HERE. -->
+</html>
